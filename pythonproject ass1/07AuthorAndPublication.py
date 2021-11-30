@@ -10,6 +10,6 @@ pb=input("Publication: ")
 curs.execute("select * from Books where Author='%s' and Publication='%s'"%(at,pb))
 data=curs.fetchall()
 if data:
-    print("data")
+    print(data)
 else:
     print("Book is not available")  
